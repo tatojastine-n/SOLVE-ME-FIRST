@@ -1,19 +1,16 @@
-#include <cmath>
-#include <cstdio>
-#include <vector>
-#include <iostream>
-#include <algorithm>
-using namespace std;
+using System;
+using System.Collections.Generic;
+using System.IO;
+class Solution {
 
-int solveMeFirst(int a, int b) {
- return a + b;
-}
+    static int solveMeFirst(int a, int b) { 
+      return a + b;
+    }
 
-int main() {
-  int num1, num2;
-  int sum;
-  cin>>num1>>num2;
-  sum = solveMeFirst(num1,num2);
-  cout<<sum;
-  return 0;
-}
+    static void Main(String[] args) {
+        int val1 = Convert.ToInt32(Console.ReadLine());
+        int val2 = Convert.ToInt32(Console.ReadLine());
+        int sum = solveMeFirst(val1,val2);
+        Console.WriteLine(sum);
+    }
+}      
